@@ -1,0 +1,35 @@
+.checkout_wrapper {
+  width: 320px;
+  h6 {
+    color: #101d94;
+    font-weight: 300;
+    color: #101d94;
+    line-height: 18px;
+    font-size: 16px;
+    margin-bottom: 0.5rem;
+  }
+  h3 {
+    font-weight: 300;
+    color: #101d94;
+    line-height: 31px;
+    font-size: 26px;
+    margin-bottom: 20px;
+  }
+  label {
+    color: #6b6b6b !important;
+  }
+  .btn {
+    background: rgba(25, 165, 39, 0.8);
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 500;
+    line-height: 19px;
+    font-size: 16px;
+    padding: 0.8rem 2.4rem 0.8rem 2.4rem;
+    text-transform: none;
+    margin-top: 2rem;
+  }
+  .card_data {
+    display: flex;
+  }
+}
