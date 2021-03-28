@@ -1,6 +1,6 @@
 import "./app.scss";
 import { Card } from "@material-ui/core";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import Form from "../form/Form";
 import Checkout from "../checkout/Checkout";
@@ -10,9 +10,11 @@ function App() {
     <div className="app">
       <Router>
         <Card className="card">
-          <Route path="/" exact component={Form} />
-          <Route path="/checkout" component={Checkout} />
-          <Route path="/thx" component={Thx} />
+          <Switch>
+            <Route path="/" exact component={Form} />
+            <Route path="/checkout" component={Checkout} />
+            <Route path="/thx" component={Thx} />
+          </Switch>
         </Card>
       </Router>
     </div>

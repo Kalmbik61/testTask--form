@@ -38,7 +38,7 @@ const Checkout = () => {
   };
   return (
     <>
-      <Bread />
+      <Bread active="checkout" />
       <div className="checkout_wrapper">
         <FormControl fullWidth>
           <h3>Оплата</h3>

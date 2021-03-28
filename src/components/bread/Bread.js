@@ -1,16 +1,17 @@
-import { Breadcrumbs } from "@material-ui/core";
-import { Link } from "react-router-dom";
+import { Breadcrumbs, Link } from "@material-ui/core";
+
 import "./bread.scss";
-const Bread = () => {
-  function handleClick(event) {
-    event.preventDefault();
-  }
+const Bread = ({ active }) => {
   return (
     <Breadcrumbs aria-label="breadcrumb">
-      <Link className="link active" to="/" onClick={handleClick}>
+      <Link className={`link ${active === "form" && "active"}`} href="/">
         Доставка
       </Link>
-      <Link className="link" to="/checkout" onClick={handleClick}>
+      <Link
+        className={`link ${active === "checkout" && "active"}`}
+        href="#"
+        aria-current="page"
+      >
         Оплата
       </Link>
     </Breadcrumbs>
